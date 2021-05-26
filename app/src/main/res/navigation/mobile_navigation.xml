@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_photos">
+
+    <fragment
+        android:id="@+id/navigation_photos"
+        android:name="com.example.mvvm.ui.photos.PhotosFragment"
+        android:label="@string/title_photos"
+        tools:layout="@layout/fragment_photos">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_authorization" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_authorization"
+        android:name="com.example.mvvm.ui.photos.authorization.AuthorizationFragment"
+        android:label="@string/title_authorization"
+        tools:layout="@layout/fragment_authorization">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            app:destination="@id/navigation_photos" />
+    </fragment>
+
+</navigation>

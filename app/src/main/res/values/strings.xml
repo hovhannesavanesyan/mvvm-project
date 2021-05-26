@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MVVVProject</string>
+    <string name="title_photos">Картинки</string>
+    <string name="title_authorization">Логин</string>
+    <string name="login">Логин</string>
+    <string name="pass">Пароль</string>
+</resources>
